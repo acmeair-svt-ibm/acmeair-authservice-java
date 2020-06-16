@@ -32,6 +32,11 @@
          <artifactId>db2jcc</artifactId>
          <version>db2jcc4</version>
         </dependency>  
+        <dependency>
+         <groupId>org.bitbucket.b_c</groupId>
+         <artifactId>jose4j</artifactId>
+         <version>0.6.5</version>
+        </dependency>        
         <!-- Aggregate of Jakarta EE APIs -->
         <dependency>
             <groupId>jakarta.platform</groupId>
