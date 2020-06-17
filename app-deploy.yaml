@@ -16,7 +16,7 @@ spec:
   - name: PASSWORD
     value: password
   - name: JVM_ARGS
-    value: "-DcustomerClient/mp-rest/url=http://stackaa-customer:9080/customer"
+    value: "-DcustomerClient/mp-rest/url=http://acmeair-kabanero.apps.bph44c1.cp.fyre.ibm.com/customer"
   - name: SECURE_SERVICE_CALLS
     value: 'true' 
   service:
