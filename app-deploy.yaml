@@ -10,6 +10,15 @@ spec:
   applicationImage: stackaa-auth 
   createKnativeService: false
   expose: true
+  env:
+  - name: USERNAME
+    value: admin
+  - name: PASSWORD
+    value: password
+  - name: JVM_ARGS
+    value: "-DcustomerClient/mp-rest/url=http://stackaa-customer:9080/customer"
+  - name: SECURE_SERVICE_CALLS
+    value: 'true' 
   service:
     type: NodePort
     port: 9080
