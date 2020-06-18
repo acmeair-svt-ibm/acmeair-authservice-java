@@ -99,7 +99,7 @@ public class SecurityUtils {
     JwtClaims claims = new JwtClaims();
     claims.setIssuer(jwtIssuer);  
 
-    claims.setExpirationTimeMinutesInTheFuture(300); 
+    claims.setExpirationTimeMinutesInTheFuture(60); 
     claims.setGeneratedJwtId(); 
     claims.setIssuedAtToNow(); 
     claims.setSubject(jwtSubject); 
