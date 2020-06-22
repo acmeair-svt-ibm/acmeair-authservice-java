@@ -1,2 +1,2 @@
 #!/bin/sh
-echo "no additional steps are needed"
+cp -rf /config/resources /opt/ol/wlp/usr/servers/defaultServer
