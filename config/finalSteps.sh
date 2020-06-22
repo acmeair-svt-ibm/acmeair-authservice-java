@@ -1,2 +1,2 @@
 #!/bin/sh
-cp -rf /config/resources/security /opt/ol/wlp/usr/servers/defaultServer/resources
+cp -f /config/resources/security/key.p12 /opt/ol/wlp/usr/servers/defaultServer/resources/security/key.p12
