@@ -5,7 +5,7 @@ metadata:
     image.opencontainers.org/title: stackaa-auth
     stack.appsody.dev/id: java-openliberty
   name: stackaa-auth
-  namespace: kabanero
+  namespace: acmeair
 spec:
   applicationImage: stackaa-auth 
   createKnativeService: false
@@ -16,7 +16,7 @@ spec:
   - name: PASSWORD
     value: password
   - name: JVM_ARGS
-    value: "-DcustomerClient/mp-rest/url=http://acmeair-kabanero.apps.svt43.os.fyre.ibm.com/customer"
+    value: "-DcustomerClient/mp-rest/url=http://acmeair-acmeair.apps.acmeair44.cp.fyre.ibm.com/customer"
   - name: SECURE_SERVICE_CALLS
     value: 'false' 
   service:
