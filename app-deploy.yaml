@@ -22,9 +22,9 @@ spec:
   service:
     type: NodePort
     port: 9080
-    consumes:
-    - category: openapi
-      name: stackaa-main
+    provides:
+      category: openapi
+      context: /auth
     annotations:
       prometheus.io/scrape: 'true'
   readinessProbe:
