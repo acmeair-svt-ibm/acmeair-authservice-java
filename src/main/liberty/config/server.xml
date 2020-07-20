@@ -19,11 +19,11 @@
 
   <keyStore id="defaultKeyStore" password="secret" /> 
 
-  <cors domain="/acmeair"
+  <cors domain="/auth"
       allowedOrigins="*"
-      allowedMethods="GET, DELETE, POST"
+      allowedMethods="GET, DELETE, POST, OPTIONS"
       allowedHeaders="*"
       allowCredentials="true"
       maxAge="3600" />
-      
+
 </server>
