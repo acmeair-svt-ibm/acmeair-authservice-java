@@ -29,7 +29,7 @@ import org.eclipse.microprofile.faulttolerance.Fallback;
 import org.eclipse.microprofile.faulttolerance.Retry;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
-@RegisterRestClient(configKey="customerClient")
+@RegisterRestClient(baseUri = "http://stackaa-customer.acmeair.svc.cluster.local:9080/customer")
 @Path("/")
 public interface CustomerClient {
 
