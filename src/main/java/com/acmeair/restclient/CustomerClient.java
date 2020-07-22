@@ -29,7 +29,7 @@ import org.eclipse.microprofile.faulttolerance.Fallback;
 import org.eclipse.microprofile.faulttolerance.Retry;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
-@RegisterRestClient(configKey = "customerClient")
+@RegisterRestClient(configKey="customerClient")
 @Path("/")
 public interface CustomerClient {
 
