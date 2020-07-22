@@ -65,8 +65,8 @@ spec:
     value: admin
   - name: PASSWORD
     value: password
-  - name: JVM_ARGS
-    value: "-DcustomerClient/mp-rest/url=http://aa-acmeair.apps.acme42.cp.fyre.ibm.com/customer"
+  # - name: JVM_ARGS
+  #   value: "-DcustomerClient/mp-rest/url=http://aa-acmeair.apps.acme42.cp.fyre.ibm.com/customer"
   - name: SECURE_SERVICE_CALLS
     value: 'false' 
   livenessProbe:
