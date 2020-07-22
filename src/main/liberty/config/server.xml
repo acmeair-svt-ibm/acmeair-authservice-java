@@ -11,7 +11,7 @@
   </httpEndpoint>
 
   <quickStartSecurity userName="${env.USERNAME}" userPassword="${env.PASSWORD}" />
-  <variable name="customerClient/mp-rest/url" value="${env.ACMEAIR_STACKAA-CUSTOMER_URL}"/>
+  <variable name="customerClient/mp-rest/url" value="${env.ACMEAIR_STACKAA_CUSTOMER_URL}"/> 
 
   <webApplication name="acmeair-authservice" location="${server.config.dir}/apps/acmeair-authservice-java.war" contextRoot="/auth">
     <!-- enable visibility to third party apis -->
