@@ -1,3 +1,4 @@
 -Xmx256m
 -Dhttp.keepalive=true
 -Dhttp.maxConnections=100
+-DcustomerClient/mp-rest/url=$ACMEAIR_STACKAA_CUSTOMER_URL
