@@ -16,7 +16,6 @@
 package com.acmeair.health;
 
 import javax.enterprise.context.ApplicationScoped;
-// import javax.inject.Inject;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 
@@ -32,15 +31,8 @@ import org.eclipse.microprofile.health.Readiness;
 @Liveness
 @ApplicationScoped
 public class AuthHealthCheck implements HealthCheck {
-  
-  // @Inject
-  // @ConfigProperty(name = "SYS_APP_HOSTNAME", defaultValue="localhost")
-  // private String hostname;
-  
-  // @Inject
-  // @ConfigProperty(name = "SYS_APP_PORT", defaultValue="9080")
-  // private int port;
 
+  // This prviously used @Inject @ConfigProperty
   Config config = ConfigProvider.getConfig();
   private String hostname = config.getValue("SYS_APP_HOSTNAME", String.class);
   private int port = config.getValue("SYS_APP_PORT", int.class);
